@@ -36,7 +36,7 @@ function Landing() {
 
   
     <main>
-    <video className={classes.root} src="/assets/hero.mp4" autoPlay loop muted/> 
+    <video className={classes.root} src="https://react-personal-website.s3.amazonaws.com/hero.mp4" autoPlay loop muted/> 
 
 
     {/* Hero unit */}
