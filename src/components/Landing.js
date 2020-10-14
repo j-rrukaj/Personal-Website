@@ -47,7 +47,7 @@ function Landing() {
          John Rrukaj
         </Typography>
         <Typography variant="h5"  paragraph>
-          AWS Solutions Architect & SysOps Administrator
+          AWS Solutions Architect & SysOps Administrator 
         </Typography>
       </Container>
     </div>

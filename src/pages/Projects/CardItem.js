@@ -16,19 +16,19 @@ const CardItem = [
 {
   key: 3,
   title: "Rollin Dice",
-  image: "./images/mountain.jpg",
+  image: "./images/Dicegame.png",
   description: "This is a basic HTML and CSS website i created."
 },
 {
   key: 4,
   title: "To Do List",
-  image: "./images/mountain.jpg",
+  image: "./images/todolist.png",
   description: "This is a basic HTML and CSS website i created."
 },
 {
   key: 5,
   title: "Simon Game",
-  image: "./images/mountain.jpg",
+  image: "./images/simongame.png",
   description: "This is a basic HTML and CSS website i created."
 },
 
