@@ -38,7 +38,7 @@ function Contact() {
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
         
-          {/* End hero unit */}
+         <h1 align="center">Test</h1>
 
          
         </Container>
