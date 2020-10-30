@@ -4,49 +4,81 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { MuiThemeProvider } from '@material-ui/core';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
-
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
     heroContent: {
-      backgroundColor: theme.palette.background.paper,
       padding: theme.spacing(8, 0, 6),
     },
-    cardGrid: {
-      paddingTop: theme.spacing(8),
-      paddingBottom: theme.spacing(8),
+    img: {
+      minHeight: "100vh",
+      backgroundImage: `url(${process.env.PUBLIC_URL + "/images/telephone.jpg"})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      position: "relative",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      color: "black"
     },
+    profileImg: {
+      height: "25vh",
+      width: "25vh",
+      borderRadius: "50%",
+      float: "none",
+      shapeOutside: "circle()"
+    },
+    text: {
+      paddingLeft: "10px",
+      
+     
+
+      }
+  
     
   }));
 
 function Contact() {
     const classes = useStyles();
     return (
-        <div>
-    <React.Fragment>
-      <CssBaseline />
-      <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Contact
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            </Typography>
-          </Container>
-        </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+
+  
+      <MuiThemeProvider theme={theme}> 
+         <div className={classes.img}>
+
+         <div >
+         <img className={classes.profileImg} src="/images/profile.jpg" alt=""/>
+         </div>
+                 
         
-         <h1 align="center">Test</h1>
 
          
-        </Container>
-      </main>
-
-    </React.Fragment>
+  
+        <div className={classes.text}>
+        <Typography variant="h5"  gutterBottom>E-mail: Johnrrukaj@gmail.com</Typography>
+         <br />
+         <Typography variant="h5"  gutterBottom>Mobile: 07432481567</Typography>
+         <br />
+         <Typography variant="h5"  gutterBottom>LinkedIn: in/JohnRrukaj</Typography>
+         <br />
+         <Typography variant="h5"  gutterBottom>Github: Github.com/j-rrukaj</Typography>
         </div>
+
+          
+         </div>
+     
+         </MuiThemeProvider> 
+    
     )
 }
 
 export default Contact
+
+
+
+ 

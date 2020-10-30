@@ -8,15 +8,17 @@ import CardItem from "./CardItem"
 import Entry from "./Entry"
 
 
-
-
 const useStyles = makeStyles((theme) => ({
-
-  heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
+  img: {
+    minHeight: "100vh",
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/cloudsmountain.jpg"})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
   },
-
+  heroContent: {
+    padding: theme.spacing(8, 0, 6),
+    color: "#FFFFFF"
+  },
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
@@ -32,6 +34,11 @@ export default function Projects() {
       <CssBaseline />
       <main>
         {/* Hero unit */}
+
+
+        <div className={classes.img}>
+
+
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
@@ -42,6 +49,7 @@ export default function Projects() {
             </Typography>
           </Container>
         </div>
+        
         <Container className={classes.cardGrid} maxWidth="md">
         
           {/* End hero unit */}
@@ -59,6 +67,7 @@ export default function Projects() {
             ))}
           </Grid>
         </Container>
+        </div>
       </main>
 
     </React.Fragment>

@@ -3,20 +3,30 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 import {ListItemText, MuiThemeProvider } from '@material-ui/core';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 
-
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexDirection: 'column',
-    padding: theme.spacing(8, 3, 6),
+  backgroundImg: {
+    minHeight: "100vh",
+    background: '#ff6e7f', /* fallback for old browsers */
+    background: '-webkit-linear-gradient(to right, #ff6e7f, #bfe9ff)', /* Chrome 10-25, Safari 5.1-6 */
+    background: 'linear-gradient(to right, #ff6e7f, #bfe9ff)',
+
+
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "black"
   },
   title: {
-    padding: "15px"
+    padding: "15px",
+    padding: theme.spacing(8, 0, 6),
   },
   img: {
     width: "120px",
@@ -28,27 +38,22 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   careerHeading: {
-    padding: "20px",
-    
-
-  }
+    padding: "20px",     
+    },
 
 }));
-
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 export default function Resume() {
   const classes = useStyles();
-
   return (
-
-    <MuiThemeProvider theme={theme}>
-
-    <div className={classes.root}>
+  
+    <MuiThemeProvider theme={theme}> 
       <CssBaseline />
-      <Container component="main" className={classes.root} maxWidth="lg">
+      <div className={classes.backgroundImg}>
+      <Container component="main" maxWidth="lg">
         <Typography className={classes.title} variant="h2" align="center" component="h1" gutterBottom>
           Resume
         </Typography>
@@ -67,7 +72,6 @@ export default function Resume() {
         part of a collaborative team or autonomously when required and thriving in challenging and fast-moving environments by
         prioritising tasks and targets with outstanding time management skills. Now seeking a new challenge in Cloud Computingthat will make the most of this skill set, preferably in a Junior AWS Architect or Junior React Developer role.
         </Typography>
-
 
         {/* Key Skill Set */}
 
@@ -257,7 +261,6 @@ export default function Resume() {
 
     {/* Education */}
 
-
       <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
       Education
       </Typography>
@@ -266,7 +269,6 @@ export default function Resume() {
        •	University of Westminster | 2012 to 2015 Honours Degree in Business Information Systems | 2:2
         </ListItemText>
 
-
       <Typography className={classes.title} variant="h5" align="center" component="h2" gutterBottom>
         Interests
       </Typography>
@@ -274,15 +276,14 @@ export default function Resume() {
       <ListItemText >
       •	Attending meet up groups, organising social events and participating in Sunday league football with friends
         </ListItemText>
-
      
         <Typography className={classes.title} variant="h5" align="center" component="h2" gutterBottom>
       Click here to download PDF and here for Word.
       </Typography>
 
-
-      </Container>
-    </div>
+      </Container>    
+      </div>
     </MuiThemeProvider>
+    
   );
 }
