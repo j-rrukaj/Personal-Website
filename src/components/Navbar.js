@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     display: 'flex',
     fontFamily: "AudioWide",
-    color: "#fff",
-    fontSize: "2rem"
+    fontSize: "2rem",
+   
   },
 
 }));
@@ -43,7 +43,7 @@ export default function Navbar() {
     <AppBar  className={classes.appbar} elevation={0} >
       <Toolbar >
        
-      <Typography className={classes.appbarTitle}  variant="body2" >
+      <Typography className={classes.appbarTitle} >
           <Link style={{ textDecoration: 'none', color: "#fff" }} to="/" onClick={closeMobileMenu}>Skywalker</Link>
           </Typography>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
           
 
-          <ul align="center" className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
           <Button className='nav-item'>
           <Link className='nav-links' onClick={closeMobileMenu} to="/">Home</Link>
