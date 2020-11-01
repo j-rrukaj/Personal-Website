@@ -33,8 +33,6 @@ export default function Projects() {
     <React.Fragment>
       <CssBaseline />
       <main>
-        {/* Hero unit */}
-
 
         <div className={classes.img}>
 
@@ -50,7 +48,7 @@ export default function Projects() {
           </Container>
         </div>
         
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
         
           {/* End hero unit */}
 

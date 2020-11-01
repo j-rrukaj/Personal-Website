@@ -13,18 +13,12 @@ import './Navbar.css';
 import Button from '@material-ui/core/Button';
 
 
-
-
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   flexGrow: 1,
-  // },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   appbar: {
     background: "none",
-    padding: theme.spacing(1, 1, 5, 0),
    },
    appbarTitle: {
     flexGrow: 1,
@@ -33,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontSize: "2rem"
   },
-
 
 }));
 
@@ -44,12 +37,11 @@ export default function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-
   return (
     
     <div>
     <AppBar  className={classes.appbar} elevation={0} >
-      <Toolbar className='navbar-container'>
+      <Toolbar >
        
       <Typography className={classes.appbarTitle}  variant="body2" >
           <Link style={{ textDecoration: 'none', color: "#fff" }} to="/" onClick={closeMobileMenu}>Skywalker</Link>
@@ -60,7 +52,6 @@ export default function Navbar() {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           
-
 
           <ul align="center" className={click ? 'nav-menu active' : 'nav-menu'}>
 
@@ -80,7 +71,6 @@ export default function Navbar() {
           </Button>
 
           </ul>
-
 
       </Toolbar>
     </AppBar>
