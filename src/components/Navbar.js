@@ -17,15 +17,17 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  appbar: {
+  navbar: {
     background: "none",
-   },
+  },
+  navbarActive: {
+    background: "red"
+  },
    appbarTitle: {
     flexGrow: 1,
     display: 'flex',
     fontFamily: "AudioWide",
     fontSize: "2rem",
-   
   },
 
 }));
@@ -34,14 +36,39 @@ export default function Navbar() {
   const classes = useStyles();
   const [click, setClick] = useState(false);
 
+  const [navBackground, setNavBackground] = useState("navbar");
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+
+  const navRef = React.useRef()
+  navRef.current = navBackground
+
+
+useEffect(() => {
+  const changeBackgroundColor = () => {
+      if (window.scrollY >= 80) {
+        setNavBackground("navbarActive")
+      } else {
+        setNavBackground("navbar")
+      }
+  }
+
+  document.addEventListener("scroll", changeBackgroundColor)
+  return ()=> {
+    document.removeEventListener("scroll", changeBackgroundColor)
+  }
+}, [])
+
+
 
   return (
     
     <div>
-    <AppBar  className={classes.appbar} elevation={0} >
+    <AppBar  className={classes [navRef.current] } elevation={0} >
       <Toolbar >
+
        
       <Typography className={classes.appbarTitle} >
           <Link style={{ textDecoration: 'none', color: "#fff" }} to="/" onClick={closeMobileMenu}>Skywalker</Link>

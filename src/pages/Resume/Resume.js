@@ -9,11 +9,6 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   backgroundImg: {
-    minHeight: "100vh",
-    background: '#ff6e7f', /* fallback for old browsers */
-    background: '-webkit-linear-gradient(to right, #ff6e7f, #bfe9ff)', /* Chrome 10-25, Safari 5.1-6 */
-    background: 'linear-gradient(to right, #ff6e7f, #bfe9ff)',
-
 
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -40,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
   careerHeading: {
     padding: "20px",     
     },
+  main: {
+    padding:" 0 30px",
+  }
 
 }));
 
@@ -236,6 +234,7 @@ export default function Resume() {
 
 
       <div>
+      <Typography className={classes.main}>
       <ListItemText >
       •	Managed a skilled team of technical staff in a fast moving and often challenging environment (the busiest tech hub in the country)
         </ListItemText>
@@ -256,6 +255,7 @@ export default function Resume() {
         <ListItemText >
         •	Liaised successfully with all internal and external stakeholders, including customers and suppliers
         </ListItemText>
+        </Typography>
       </div>
 
 
