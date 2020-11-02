@@ -7,6 +7,7 @@ import Resume from "./pages/Resume/Resume";
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 import Footer from "./components/Footer"
+import Sidebar from "./components/Sidebar"
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
   <Route path="/resume" component={Resume} />
   <Route path="/projects" component={Projects} />
   <Route path="/contact" component={Contact} />
+  <Route path="/sidebar" component={Sidebar} />
   </Switch>
-
+    
   <Footer />
   </div>
   

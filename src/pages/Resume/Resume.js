@@ -9,7 +9,6 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   backgroundImg: {
-
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
