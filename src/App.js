@@ -7,7 +7,8 @@ import Resume from "./pages/Resume/Resume";
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 import Footer from "./components/Footer"
-import Sidebar from "./components/Sidebar"
+import Sidebar from "./pages/Resume/Sidebar"
+import {SidebarData} from "./pages/Resume/SidebarData"
 
 
 function App() {
@@ -25,9 +26,14 @@ function App() {
   <Route path="/sidebar" component={Sidebar} />
   </Switch>
 
+  
+
   <Footer />
   </div>
   
+
+  
+ 
 
   );
 }
