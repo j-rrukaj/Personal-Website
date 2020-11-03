@@ -26,7 +26,7 @@ export const SidebarData = [
         link: "Smooth scroll"
     },
     {
-        title: "Certifications",
+        title: "Certs",
         icon: <VerifiedUserIcon />,
         link: "Smooth scroll"
     },
@@ -46,7 +46,7 @@ export const SidebarData = [
         link: "Smooth scroll"
     },
     {
-        title: "Download CV",
+        title: "CV",
         icon: <GetAppIcon />,
         link: "Smooth scroll"
     },
