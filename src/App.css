@@ -16,7 +16,7 @@ ul {
 .Sidebar {
     padding-top: 140px;
     height: 100vh;
-    width: 235px;
+    width: 200px;
     background-color: teal;
 }
 
@@ -32,22 +32,23 @@ ul {
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 1rem;
 }
 
 .links #icon {
-    flex: 20%;
-    padding-left: 2rem;
+    flex: 10%;
+    
 }
 
 .links #title {
-    flex: 90%;
+    flex: 70%;
 }
 
 @media screen and (max-width: 960px) {
     .Sidebar {
         padding-top: 140px;
         height: 100vh;
-        width: 180px;
+        width: 170px;
         background-color: teal;
     }
 

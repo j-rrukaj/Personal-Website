@@ -57,6 +57,10 @@ export default function Resume() {
 
         {/* Professional Summary */}
 
+
+        <div id="summary">
+
+
         <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
           Professional Summary
         </Typography>
@@ -70,13 +74,25 @@ export default function Resume() {
         prioritising tasks and targets with outstanding time management skills. Now seeking a new challenge in Cloud Computingthat will make the most of this skill set, preferably in a Junior AWS Architect or Junior React Developer role.
         </Typography>
 
+
+
+        </div>
+
+
+
+
         {/* Key Skill Set */}
+
+
+        <div id="skills">
+
+
+
 
         <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
          Key Skill Set
         </Typography>
     
-        <div >
 
         <Typography className={classes.main}>
 
@@ -109,6 +125,9 @@ export default function Resume() {
           </ListItemText>
 
         </Typography>
+      
+
+
         </div>
 
 
