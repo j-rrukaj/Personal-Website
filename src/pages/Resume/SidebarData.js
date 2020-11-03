@@ -13,42 +13,34 @@ export const SidebarData = [
     {
         title: "Summary",
         icon: <PortraitIcon />,
-        link: "Smooth scroll"
     },
     {
         title: "Skill Set",
         icon: <StarIcon />,
-        link: "Smooth scroll"
     },
     {
         title: "AWS",
         icon: <CloudIcon />,
-        link: "Smooth scroll"
     },
     {
-        title: "Certs",
+        title: "Certifications",
         icon: <VerifiedUserIcon />,
-        link: "Smooth scroll"
     },
     {
         title: "Projects",
         icon: <VerticalSplitIcon />,
-        link: "Smooth scroll"
     },
     {
         title: "Career",
         icon: <WorkIcon />,
-        link: "Smooth scroll"
     },
     {
         title: "Education",
         icon: <LaptopWindowsIcon />,
-        link: "Smooth scroll"
     },
     {
         title: "CV",
         icon: <GetAppIcon />,
-        link: "Smooth scroll"
     },
 
 

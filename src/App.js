@@ -11,11 +11,12 @@ import Sidebar from "./pages/Resume/Sidebar"
 import {SidebarData} from "./pages/Resume/SidebarData"
 
 
+
 function App() {
   return (
   
+    <Router>
     
-    <div>
     <Navbar />
    
     <Switch>
@@ -23,17 +24,15 @@ function App() {
   <Route path="/resume" component={Resume} />
   <Route path="/projects" component={Projects} />
   <Route path="/contact" component={Contact} />
-  <Route path="/sidebar" component={Sidebar} />
   </Switch>
-
   
 
   <Footer />
-  </div>
   
 
+  </Router>
   
- 
+
 
   );
 }

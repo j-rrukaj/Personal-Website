@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     height: "4.5rem",
   },
   navbarScroll: {
-    background: "black",
+    background: "#bbbfca",
     color: "white",
     height: "4.5rem",
   },

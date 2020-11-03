@@ -1,6 +1,11 @@
+
+
+
 .page {
     padding-top: 30px;
     padding-left: 250px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #summary {
@@ -14,7 +19,7 @@
 
 @media screen and (max-width: 960px) {
     #summary {
-        padding-left: 150px;
+        padding-left: 120px;
         padding-right: 20px;
     }
 
