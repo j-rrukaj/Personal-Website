@@ -1,29 +1,57 @@
+   
+.right-arrow {
+  top: 10rem;
+  position: fixed;
+  margin-right: 0;
+  padding-right: 0;
+  font-size: 2rem;
+  
+  text-decoration: none;
+  color: white;
+}
 
-.App {
-    width: 100vw;
-    height: 100vh; 
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .Sidebar {
+  .menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  text-decoration: none;
+  color: white;
+}
+
+  .sidebar-menu {
     padding-top: 140px;
     height: 100vh;
-    width: 230px;
+    width: 200px;
     background-color: teal;
     position: fixed;
     float: left;
     margin-right: 20px;
+    left: -100%;
+    transition: 850ms;    
+  }
+
+
+  .sidebar-menu.active {
+    left: 0;
+    transition: 350ms;
+  }
+
+  .sidebar-menu-items {
+    width: 80%;
+    padding-left: px;
+  }
+
+
+  .sidebar-toggle {
+    background-color: teal;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
   
+
   .Sidebar .row:hover {
     cursor: pointer;
     background-color: red;
@@ -38,6 +66,7 @@
     color: white;
     padding: 1rem;
     cursor: pointer;
+    font-size: 14px;
   }
 
   .links:hover {
@@ -48,25 +77,41 @@
   
   .links #icon {
     flex: 20%;
-    font-size: 14px;
-    
   }
   
   .links #title {
     flex: 70%;
-    font-size: 14px;
+    
   }
   
+
   @media screen and (max-width: 960px) {
-    .Sidebar {
-        padding-top: 140px;
-        height: 100vh;
-        width: 110px;
-        background-color: teal;
-        position: fixed;
-        float: left;
-        margin-right: 20px;
+
+    .sidebar-menu {
+      padding-top: 140px;
+      height: 100vh;
+      width: 170px;
+      background-color: teal;
+      position: fixed;
+      float: left;
+      margin-right: 20px;
+      left: -100%;
+      transition: 850ms;    
     }
+
+    .links #icon {
+      flex: 20%;
+    }
+    
+    .links #title {
+      flex: 20%;
+    }
+
+    .sidebar-menu-items {
+      width: 80%;
+      padding-left: 10px;
+    }
+
+
   
-  
-  }
+  } 
