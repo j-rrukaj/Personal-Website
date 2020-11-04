@@ -1,15 +1,13 @@
 
-
-/* 
 .page {
     padding-top: 30px;
-    padding-left: 250px;
+    
     margin-top: 0;
     margin-bottom: 0;
 }
 
 #summary {
-    padding-left: 250px;
+ 
     padding-right: 20px;
 }
 
@@ -19,13 +17,14 @@
 
 @media screen and (max-width: 960px) {
     #summary {
-        padding-left: 120px;
+    
         padding-right: 20px;
     }
 
     .page {
         padding-top: 30px;
-        padding-left: 200px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
-} */
+} 

@@ -23,7 +23,7 @@ import {Link as Links}  from 'react-router-dom'
 
 
 
-    <div className="Sidebar"> 
+    <div > 
 
         <div className="right-arrow">         
         <Links to="#"  >
@@ -31,18 +31,15 @@ import {Link as Links}  from 'react-router-dom'
        </Links>
        </div>
 
-
-
          <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
           <ul className='sidebar-menu-items' onClick={showSidebar}>
             <li className='sidebar-toggle'>
-              <Links to='#' className='menu-bars'>
+              <Links to='#' className="left-arrow">
                 <Bs.BsArrowBarLeft />
               </Links>
             </li>
             {SidebarData.map((val, key) => {
               return (
-        
                        <Link className="links" 
                             activeClass="active"
                             to={val.title}
@@ -52,16 +49,13 @@ import {Link as Links}  from 'react-router-dom'
                             duration={500}
                              >
             
-                        <div id="icon" >
-                            {val.icon}
-                        </div>
-                        <div id="title">
-                            {val.title}
-                        </div>
-                        
+                                <div id="icon" >
+                                    {val.icon}
+                                </div>
+                                <div id="title">
+                                    {val.title}
+                                </div>
                         </Link>
-
-               
               )
             })}
             </ul>
@@ -69,80 +63,6 @@ import {Link as Links}  from 'react-router-dom'
         </div>
 
 )}
-
-
-
-
-
-
-
-{/* 
-           
-                {SidebarData.map((val, key) => {
-                return (
-
-                    <ul className='nav-menu-items' onClick={showSidebar}>
-                     <li className='navbar-toggle'>
-
-                       <Link className="links" 
-                            activeClass="active"
-                            to={val.title}
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                             >
-            
-                        <div id="icon" >
-                            {val.icon}
-                        </div>
-                        <div id="title">
-                            {val.title}
-                        </div>
-                        
-                        </Link>
-
-                )
-                
-                })}
-
-                        <div>
-
-                        <ul>
-
-                            <li>
-
-
-                                <Links to="#" className="menu-bars" >
-
-                                  <Bs.BsArrowBarLeft onClick={showSidebar} />
-
-                                </Links>
-
-
-                            </li>
-
-
-                        </ul>
-
-                        </div>
-
-
-
-    
-
-
-            </nav>
-
-            </div>
-    )
-}
-
-
-
- */}
-
-
 
 
 
