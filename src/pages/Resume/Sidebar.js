@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import "./Sidebar.css"
 import {SidebarData} from "./SidebarData"
 import {Link} from "react-scroll"
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 import * as Bs from "react-icons/bs";
 
 import {Link as Links}  from 'react-router-dom'
@@ -17,22 +15,18 @@ import {Link as Links}  from 'react-router-dom'
     const showSidebar = () => setSidebar(!sidebar) 
 
 
-
-
     return (
-
-
 
     <div > 
 
-        <div className="right-arrow">         
-        <Links to="#"  >
+        <div >         
+        <Links to="#" className="right-arrow" >
                <Bs.BsArrowBarRight onClick={showSidebar} />
        </Links>
        </div>
 
          <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
-          <ul className='sidebar-menu-items' onClick={showSidebar}>
+          <ul className='sidebar-menu-items' onClick={showSidebar} >
             <li className='sidebar-toggle'>
               <Links to='#' className="left-arrow">
                 <Bs.BsArrowBarLeft />
@@ -40,6 +34,7 @@ import {Link as Links}  from 'react-router-dom'
             </li>
             {SidebarData.map((val, key) => {
               return (
+                  <li>
                        <Link className="links" 
                             activeClass="active"
                             to={val.title}
@@ -56,6 +51,7 @@ import {Link as Links}  from 'react-router-dom'
                                     {val.title}
                                 </div>
                         </Link>
+                    </li>
               )
             })}
             </ul>

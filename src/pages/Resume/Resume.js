@@ -179,18 +179,137 @@ export default function Resume() {
 
        <img className={classes.img} src="images/sysops-badge.png" alt=""/>
       </div>
-
-
-
-    </div>
-
-
     </div>
 
 
 
-      </div>
+    <div id="Projects">
+
+
+    <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+      Project Experience
+      </Typography>
+
+      <Typography >
+
+      <ListItemText >
+      • Designed a personal website hosted on AWS: leveraging CloudFront, S3 and ACM to host and globally distribute
+      the website quickly and securely 
+        </ListItemText>
+
+        <ListItemText >
+      • Made use of JavaScript to acquire a robust understanding of array use and logic statements to create games and other applications
+        </ListItemText>
+
+        <ListItemText >
+      • Explored a variety of frameworks to streamline the process, including Express and EJS 
+        </ListItemText>
+        
+        <ListItemText>
+      • Currently working on a project to enable the user to create new notes (saving notes to a database) as well as planning creation of a user sign in option
+        </ListItemText>
+
+      </Typography>
       
+      </div>
+
+      <div id="Career">
+
+
+      <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+      Career Summary
+      </Typography>
+
+      <Typography className={classes.careerHeading} variant="subtitle1" align="center" gutterBottom>
+      MENTOR AND SUPPORT ASSISTANT WITH CERTIFIED AWS INSTRUCTOR (ANDREW BEL-DEAN) | 2019 
+      </Typography>
+
+      <Typography variant="subtitle2" gutterBottom>
+      KEY ACHIEVEMENTS AND RESPONSIBILITIES
+      </Typography>
+
+     
+      <ListItemText >
+      • Took students through live laboratory procedures, successfully explaining the principles and practice of key technologies
+        </ListItemText>
+
+        <ListItemText >
+       •  Provisioned labs in Solutions Architect, Sysops, Security Engineering, Advanced Architecting and DevOps methodologies
+        </ListItemText>
+
+        <ListItemText >
+      • Supported students in creating, developing and delivering projects and presentations 
+        </ListItemText>
+        
+    
+
+      <Typography className={classes.careerHeading} variant="subtitle1" align="center" gutterBottom>
+      TECHNICAL SUPPORT MANAGER | 2017 TO 2020 DIXONS CARPHONE
+
+      </Typography>
+
+      <Typography variant="subtitle2" gutterBottom>
+      KEY ACHIEVEMENTS AND RESPONSIBILITIES
+      </Typography>
+
+      
+      <Typography >
+      <ListItemText >
+      • Managed a skilled team of technical staff in a fast moving and often challenging environment (the busiest tech hub in the country)
+        </ListItemText>
+
+        <ListItemText >
+        • Supported on-site manufacture repairs for Apple and Samsung and played an integral role in provision of technical support for a
+        variety of other manufactures, including Huawei and Sony
+        </ListItemText>
+
+        <ListItemText >
+        • Provided informed feedback so as to modify and correct any ongoing departmental issues
+        </ListItemText>
+
+        <ListItemText >
+        • Took a key part in delivering best quality customer services to the highest professional standards
+        </ListItemText>
+
+        <ListItemText >
+        • Liaised successfully with all internal and external stakeholders, including customers and suppliers
+        </ListItemText>
+        </Typography>
+     
+    </div>
+
+    <div id="Education">
+
+
+    <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+      Education
+      </Typography>
+     
+      <ListItemText >
+       •  University of Westminster | 2012 to 2015 Honours Degree in Business Information Systems | 2:2
+        </ListItemText>
+
+      <Typography className={classes.title} variant="h5" align="center" component="h2" gutterBottom>
+        Interests
+      </Typography>
+
+      <ListItemText >
+      • Attending meet up groups, organising social events and participating in Sunday league football with friends
+        </ListItemText>
+     
+        <Typography className={classes.title} variant="h5" align="center" component="h2" gutterBottom>
+      Click here to download PDF and here for Word.
+      </Typography>
   
+      </div>
+
+
+
+
+
+
+
+    </div>
+      </div>
   )
 }

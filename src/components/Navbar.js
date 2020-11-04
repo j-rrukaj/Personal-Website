@@ -17,11 +17,12 @@ const useStyles = makeStyles((theme) => ({
     height: "4.5rem",
   },
   navbarScroll: {
-    background: "#bbbfca",
+    background: "black",
     color: "white",
     height: "4.5rem",
   },
    appbarTitle: {
+    paddingTop: "15px",
     flexGrow: 1,
     display: 'flex',
     fontFamily: "AudioWide",
@@ -64,7 +65,9 @@ useEffect(() => {
       <Toolbar >
        
       <Typography className={classes.appbarTitle} >
-          <Link style={{ textDecoration: 'none', color: "#fff" }} to="/" onClick={closeMobileMenu}>Skywalker</Link>
+          <Link style={{ textDecoration: 'none', color: "#fff" }} to="/" onClick={closeMobileMenu}>
+          Skywalker
+          </Link>
           </Typography>
 
           <div className='menu-icon' onClick={handleClick}>
