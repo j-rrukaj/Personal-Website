@@ -34,7 +34,7 @@ import {Link as Links}  from 'react-router-dom'
             </li>
             {SidebarData.map((val, key) => {
               return (
-                  <li>
+                  
                        <Link className="links" 
                             activeClass="active"
                             to={val.title}
@@ -51,7 +51,7 @@ import {Link as Links}  from 'react-router-dom'
                                     {val.title}
                                 </div>
                         </Link>
-                    </li>
+                    
               )
             })}
             </ul>
