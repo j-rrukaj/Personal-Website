@@ -14,6 +14,7 @@ phases:
     commands:
       - echo Installing dependencies...
       - yarn
+
   build:
     commands:
       - echo Building...
@@ -23,3 +24,5 @@ artifacts:
     - "**/*"
   discard-paths: no
   base-directory: public
+
+  
