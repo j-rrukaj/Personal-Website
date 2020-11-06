@@ -1,25 +1,17 @@
 
 .page {
     padding-top: 30px;
-    
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
-#summary {
- 
-    padding-right: 20px;
-}
 
 
 
 
 
 @media screen and (max-width: 960px) {
-    #summary {
-    
-        padding-right: 20px;
-    }
+
 
     .page {
         padding-top: 30px;

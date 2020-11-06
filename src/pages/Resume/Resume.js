@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Sidebar from "./Sidebar"
 import "./Resume.css"
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import {ListItemText, MuiThemeProvider } from '@material-ui/core';
+import { ListItemText } from '@material-ui/core';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 
@@ -70,11 +69,11 @@ export default function Resume() {
       <div  id="Summary">
         
 
-     <Typography className={classes.title} variant="h5" align="center"  gutterBottom>
+     <Typography className={classes.title} variant="h4" align="center"  gutterBottom>
           Professional Summary
         </Typography>
 
-        <Typography variant="body2" gutterBottom>
+        <Typography variant="body1" gutterBottom>
         Seeking a dynamic new role as a junior AWS engineer or a junior React programmer, passionate and goal driven individual
         with a proven track record of delivering high quality technical output, analysis and client engagement services to the
         best professional standards. Well organised and with a keen attention to detail that ensures completion of all tasks on
@@ -91,12 +90,12 @@ export default function Resume() {
       <div id="Skill Set">
 
 
-        <Typography className={classes.title} variant="h5"  align="center" gutterBottom>
+        <Typography className={classes.title} variant="h4"  align="center" gutterBottom>
          Key Skill Set
         </Typography>
         
 
-        <Typography variant="body2" gutterBottom >
+        <Typography variant="body1" gutterBottom >
 
         <ListItemText >
           • AWS Certified Solutions Architect and Systems Administrator and currently preparing to complete further certifications
@@ -135,7 +134,7 @@ export default function Resume() {
         <div id="AWS">
 
 
-        <Typography className={classes.title} variant="h5"  align="center" gutterBottom>
+        <Typography className={classes.title} variant="h4"  align="center" gutterBottom>
         AWS Aptitudes
         </Typography>
 
@@ -169,7 +168,7 @@ export default function Resume() {
     <div id="Certifications">
 
    
-    <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+    <Typography className={classes.title} variant="h4" align="center" gutterBottom>
       Professional Certifications and Training
         </Typography>
 
@@ -186,7 +185,7 @@ export default function Resume() {
     <div id="Projects">
 
 
-    <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+    <Typography className={classes.title} variant="h4" align="center" gutterBottom>
       Project Experience
       </Typography>
 
@@ -216,7 +215,7 @@ export default function Resume() {
       <div id="Career">
 
 
-      <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+      <Typography className={classes.title} variant="h4" align="center" gutterBottom>
       Career Summary
       </Typography>
 
