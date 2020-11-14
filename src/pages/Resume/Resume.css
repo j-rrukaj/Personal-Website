@@ -1,22 +1,54 @@
 
-.page {
-    padding-top: 30px;
-    padding-left: 55px;
-    padding-right: 55px;
+.title {
+    padding: 2rem;
 }
 
 
+.text {
+   
+    padding-top: 1.5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 2rem;
+}
 
+#sectionOne {
+    background-color: #eeeded;
+    min-height: 82vh;
+    background-size: cover;
+}
 
+#sectionTwo {
+    min-height: 80vh;
+    background-size: cover;
+}
+
+#sectionThree {
+    background-color: #eeeded;
+    min-height: 110vh;
+    background-size: cover;
+}
+
+#sectionFour {
+    min-height: 40vh;
+    background-size: cover;
+}
+
+.button {
+        display: flex;
+        justify-content: center;
+
+      
+}
 
 
 @media screen and (max-width: 960px) {
 
 
-    .page {
+    .text {
         padding-top: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 
 } 

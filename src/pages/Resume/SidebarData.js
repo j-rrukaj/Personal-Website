@@ -1,46 +1,44 @@
 import React from 'react'
-import HomeIcon from '@material-ui/icons/Home';
-import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import WorkIcon from '@material-ui/icons/Work';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import CloudIcon from '@material-ui/icons/Cloud';
-import LaptopWindowsIcon from '@material-ui/icons/LaptopWindows';
-import VerticalSplitIcon from '@material-ui/icons/VerticalSplit';
-import StarIcon from '@material-ui/icons/Star';
-import PortraitIcon from '@material-ui/icons/Portrait';
+
+import * as Ai from "react-icons/ai"
+import * as Fa from "react-icons/fa"
+import * as Cg from "react-icons/cg"
+import * as Im from "react-icons/im"
+
+import "./SidebarData.css"
 
 export const SidebarData = [
     {
-        title: "Summary",
-        icon: <PortraitIcon />,
+        title: "Summary" ,
+        icon: <Im.ImProfile className="sidebar-icons"/>,
     },
     {
         title: "Skill Set",
-        icon: <StarIcon />,
+        icon: <Ai.AiOutlineStar className="sidebar-icons"/>,
     },
     {
         title: "AWS",
-        icon: <CloudIcon />,
+        icon: <Ai.AiOutlineCloud className="sidebar-icons"/>
     },
     {
         title: "Certifications",
-        icon: <VerifiedUserIcon />,
+        icon: <Ai.AiOutlineSafetyCertificate className="sidebar-icons"/>,
     },
     {
         title: "Projects",
-        icon: <VerticalSplitIcon />,
+        icon: <Fa.FaProjectDiagram className="sidebar-icons"/>,
     },
     {
         title: "Career",
-        icon: <WorkIcon />,
+        icon: <Cg.CgWorkAlt className="sidebar-icons"/>,
     },
     {
         title: "Education",
-        icon: <LaptopWindowsIcon />,
+        icon: <Fa.FaGraduationCap className="sidebar-icons"/>,
     },
     {
         title: "CV",
-        icon: <GetAppIcon />,
+        icon: <Ai.AiOutlineDownload className="sidebar-icons"/>,
     },
 
 

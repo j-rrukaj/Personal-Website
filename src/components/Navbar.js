@@ -17,12 +17,12 @@ const useStyles = makeStyles((theme) => ({
     height: "4.5rem",
   },
   navbarScroll: {
-    background: "red",
+    background: "black",
     color: "white",
     height: "4.5rem",
   },
    appbarTitle: {
-    paddingTop: "15px",
+    
     flexGrow: 1,
     display: 'flex',
     fontFamily: "AudioWide",
@@ -61,7 +61,7 @@ useEffect(() => {
 
   return (   
     <div>
-    <AppBar  className={classes [navRef.current] } elevation={0} >
+    <AppBar  className={classes [navRef.current] } >
       <Toolbar >
        
       <Typography className={classes.appbarTitle} >

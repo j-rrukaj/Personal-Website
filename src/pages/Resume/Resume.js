@@ -3,26 +3,19 @@ import Sidebar from "./Sidebar"
 import "./Resume.css"
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { ListItemText } from '@material-ui/core';
+import { ListItemText, Container } from '@material-ui/core';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 
 
 const useStyles = makeStyles((theme) => ({
-  backgroundImg: {
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    position: "relative",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    color: "black"
+  heroContent: {
+    padding: theme.spacing(12, 0, 6),
+    color: "white",
+    backgroundColor: "#fa1616"
   },
-  title: {
-    padding: "15px",
-    padding: theme.spacing(8, 0, 6),
-  },
+  
   img: {
     width: "120px",
     height: "130px",
@@ -35,9 +28,8 @@ const useStyles = makeStyles((theme) => ({
   careerHeading: {
     padding: "20px",     
     },
-  main: {
-    padding:" 0 30px",
-  }
+
+  
 
 }));
 
@@ -51,25 +43,23 @@ export default function Resume() {
 
   
 
-    <div >
+    <div  >
 
-      <Sidebar />
+    <Sidebar />
     
-      <div className="page">
+      
 
-     
-      <Typography className={classes.title} variant="h2" align="center"  gutterBottom>
+  
+      <Typography className={classes.heroContent} variant="h2" align="center" >
           Resume
         </Typography>
 
+  
 
-
-
-
-      <div  id="Summary">
+      <div id="sectionOne" className="text">
         
-
-     <Typography className={classes.title} variant="h4" align="center"  gutterBottom>
+      <div  id="Summary">
+     <Typography className= "title" variant="h4" align="center"  gutterBottom>
           Professional Summary
         </Typography>
 
@@ -82,20 +72,18 @@ export default function Resume() {
         prioritising tasks and targets with outstanding time management skills. Now seeking a new challenge in Cloud Computing
         that will make the most of this skill set, preferably in a Junior AWS Architect or Junior React Developer role.
         </Typography>
-
-      
         </div>
+ 
+                                                {/* Key Skill Set */}
 
+        <div id="Skill Set">
 
-      <div id="Skill Set">
-
-
-        <Typography className={classes.title} variant="h4"  align="center" gutterBottom>
+        <Typography className= "title" variant="h4"  align="center" gutterBottom>
          Key Skill Set
         </Typography>
         
 
-        <Typography variant="body1" gutterBottom >
+        <Typography variant="body3" gutterBottom >
 
         <ListItemText >
           • AWS Certified Solutions Architect and Systems Administrator and currently preparing to complete further certifications
@@ -110,7 +98,8 @@ export default function Resume() {
           </ListItemText>
           
           <ListItemText>
-          • Leading and working as an integral member of cohesive and target driven teams, delivering quality outcomes within an environment of excellence
+          • Leading and working as an integral member of cohesive and target driven teams, delivering quality outcomes
+          within an environment of excellence
           </ListItemText>
 
           <ListItemText>
@@ -128,13 +117,16 @@ export default function Resume() {
         </Typography>
 
         </div>
+  
+        </div>
 
 
+        <div id="sectionTwo" className="text">
 
         <div id="AWS">
 
 
-        <Typography className={classes.title} variant="h4"  align="center" gutterBottom>
+        <Typography className= "title" variant="h4"  align="center" gutterBottom>
         AWS Aptitudes
         </Typography>
 
@@ -165,10 +157,9 @@ export default function Resume() {
 
 
 
-    <div id="Certifications">
-
+      <div id="Certifications">
    
-    <Typography className={classes.title} variant="h4" align="center" gutterBottom>
+    <Typography className= "title" variant="h4" align="center" gutterBottom>
       Professional Certifications and Training
         </Typography>
 
@@ -180,12 +171,15 @@ export default function Resume() {
       </div>
     </div>
 
+    </div>
 
+
+    <div id="sectionThree" className="text">
 
     <div id="Projects">
 
 
-    <Typography className={classes.title} variant="h4" align="center" gutterBottom>
+    <Typography className= "title" variant="h4" align="center" gutterBottom>
       Project Experience
       </Typography>
 
@@ -212,10 +206,10 @@ export default function Resume() {
       
       </div>
 
+
       <div id="Career">
 
-
-      <Typography className={classes.title} variant="h4" align="center" gutterBottom>
+      <Typography className= "title" variant="h4" align="center" gutterBottom>
       Career Summary
       </Typography>
 
@@ -240,7 +234,6 @@ export default function Resume() {
       • Supported students in creating, developing and delivering projects and presentations 
         </ListItemText>
         
-    
 
       <Typography className={classes.careerHeading} variant="subtitle1" align="center" gutterBottom>
       TECHNICAL SUPPORT MANAGER | 2017 TO 2020 DIXONS CARPHONE
@@ -252,7 +245,7 @@ export default function Resume() {
       </Typography>
 
       
-      <Typography >
+      <Typography gutterBottom>
       <ListItemText >
       • Managed a skilled team of technical staff in a fast moving and often challenging environment (the busiest tech hub in the country)
         </ListItemText>
@@ -276,11 +269,16 @@ export default function Resume() {
         </Typography>
      
     </div>
+    </div>
+
+
+
+    <div id="sectionFour" className="text">
 
     <div id="Education">
 
 
-    <Typography className={classes.title} variant="h4" align="center" component="h2" gutterBottom>
+    <Typography className= "title" variant="h4" align="center" component="h2" gutterBottom>
       Education
       </Typography>
      
@@ -288,7 +286,9 @@ export default function Resume() {
        •  University of Westminster | 2012 to 2015 Honours Degree in Business Information Systems | 2:2
         </ListItemText>
 
-      <Typography className={classes.title} variant="h5" align="center" component="h2" gutterBottom>
+        
+
+      <Typography className= "title" variant="h5" align="center" component="h2" gutterBottom>
         Interests
       </Typography>
 
@@ -296,19 +296,28 @@ export default function Resume() {
       • Attending meet up groups, organising social events and participating in Sunday league football with friends
         </ListItemText>
      
-        <Typography className={classes.title} variant="h5" align="center" component="h2" gutterBottom>
-      Click here to download PDF and here for Word.
-      </Typography>
+       
+
+      
   
       </div>
+     
 
 
 
-
-
-
-
-    </div>
       </div>
+
+
+      
+
+          <div className="button">
+           <Button variant="outlined" color="primary" href="https://cv-download.s3.eu-west-2.amazonaws.com/John+R+CV.docx">
+               Download CV
+            </Button>
+          </div>
+
+    
+    </div>
+      
   )
 }

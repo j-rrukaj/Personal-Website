@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -51,11 +52,9 @@ function Entry(props) {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View
+                    <a href={props.link}>View</a>
                     </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
+                    
                   </CardActions>
                 </Card>
               </Grid>

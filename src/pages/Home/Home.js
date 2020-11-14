@@ -12,7 +12,7 @@ theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/heroimg.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/nightsky.jpg"})`,
     minHeight: '100vh',
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -41,6 +41,9 @@ function Home() {
         
         <Typography variant="h5">
           AWS Solutions Architect & SysOps Administrator 
+        </Typography>
+        <Typography variant="h5">
+          React Programmer 
         </Typography>
        
         </Box>
