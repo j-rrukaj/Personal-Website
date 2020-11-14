@@ -1,10 +1,7 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { MuiThemeProvider } from '@material-ui/core';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import "./Contact.css"
 
@@ -18,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     heroContent: {
     padding: theme.spacing(12, 0, 6),
       color: "#FFFFFF",
-      
     },
     img: {
       minHeight: "100vh",
@@ -26,34 +22,21 @@ const useStyles = makeStyles((theme) => ({
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
-      
     },
-   
-    
     profileImg: {
       height: "25vh",
       width: "25vh",
       borderRadius: "50%",
       shapeOutside: "circle()",
-      
-      
-      
-      
     },
     text: {
-      
       display: "inline-block"
-      
       }
-  
-    
   }));
 
 function Contact() {
     const classes = useStyles();
     return (
-
-  
     
          <div className={classes.img}>
 

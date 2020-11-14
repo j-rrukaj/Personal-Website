@@ -9,7 +9,7 @@
 }
 
   .left-arrow {
-  margin-left: 2rem;
+  padding-left: 9.5rem;
   right: 8.5rem;
   font-size: 2rem;
   background: none;
@@ -17,13 +17,13 @@
   color: white;
   left: -100%;
   transition: 850ms;
-  padding-left: 5.5rem;
+  
 }
 
   .sidebar-menu {
     padding-top: 140px;
     height: 100vh;
-    width: 160px;
+    width: 190px;
     background-color: black;
     position: fixed;
     float: left;
@@ -82,7 +82,7 @@
     .sidebar-menu {
       padding-top: 140px;
       height: 100vh;
-      width: 160px;
+      width: 170px;
       background-color: black;
       position: fixed;
       float: left;
@@ -115,7 +115,7 @@
      .left-arrow {
       top: 10rem;
       margin-left: 2rem;
-      left: 8.5rem;
+      padding-left:6rem;
       font-size: 2rem;
       text-decoration: none;
       color: white;

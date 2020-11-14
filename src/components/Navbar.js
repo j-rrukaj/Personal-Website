@@ -22,8 +22,9 @@ const useStyles = makeStyles((theme) => ({
     height: "4.5rem",
   },
    appbarTitle: {
-    
     flexGrow: 1,
+    position: "relative",
+    top: "10px",
     display: 'flex',
     fontFamily: "AudioWide",
     fontSize: "1.5rem",

@@ -3,6 +3,7 @@ import "./Sidebar.css"
 import {SidebarData} from "./SidebarData"
 import {Link} from "react-scroll"
 import * as Bs from "react-icons/bs";
+import * as Ai from "react-icons/ai"
 
 import {Link as Links}  from 'react-router-dom'
 
@@ -21,7 +22,7 @@ import {Link as Links}  from 'react-router-dom'
 
         <div >         
         <Links to="#" className="right-arrow" >
-               <Bs.BsArrowBarRight onClick={showSidebar} />
+               <Ai.AiOutlineDoubleRight onClick={showSidebar} />
        </Links>
        </div>
 
@@ -29,7 +30,7 @@ import {Link as Links}  from 'react-router-dom'
           <ul className='sidebar-menu-items' onClick={showSidebar} >
             <li className='sidebar-toggle'>
               <Links to='#' className="left-arrow">
-                <Bs.BsArrowBarLeft />
+                <Ai.AiOutlineDoubleLeft />
               </Links>
             </li>
             {SidebarData.map((val, key) => {

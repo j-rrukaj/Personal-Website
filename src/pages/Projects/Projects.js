@@ -9,11 +9,12 @@ import Entry from "./Entry"
 
 
 const useStyles = makeStyles((theme) => ({
-  img: {
-    minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/cloudsmountain.jpg"})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
+  backgroundImg: {
+      minHeight: "100vh",
+      backgroundImage: `url(${process.env.PUBLIC_URL + "/images/cloudsmountain.jpg"})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
   },
   heroContent: {
     padding: theme.spacing(12, 0, 6),
@@ -30,11 +31,8 @@ export default function Projects() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <main>
-
-        <div className={classes.img}>
+    
+        <div className={classes.backgroundImg}>
 
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
@@ -63,9 +61,9 @@ export default function Projects() {
             ))}
           </Grid>
         </Container>
-        </div>
-      </main>
+    
 
-    </React.Fragment>
+    </div>
+    
   );
 }
