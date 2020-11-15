@@ -3,8 +3,7 @@ import Sidebar from "./Sidebar"
 import "./Resume.css"
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { ListItemText, Container } from '@material-ui/core';
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { ListItemText } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 
 
@@ -13,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   heroContent: {
     padding: theme.spacing(12, 0, 6),
     color: "white",
-    backgroundColor: "#fa1616"
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/banner.jpg"})`,
   },
   
   img: {
@@ -33,8 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
 export default function Resume() {
   const classes = useStyles();
@@ -296,25 +293,32 @@ export default function Resume() {
       • Attending meet up groups, organising social events and participating in Sunday league football with friends
         </ListItemText>
      
-       
-
-      
-  
       </div>
-     
-
-
 
       </div>
 
 
-      
+        <div id="sectionFive">
+
+          <div id="CV">
 
           <div className="button">
            <Button variant="outlined" color="primary" href="https://cv-download.s3.eu-west-2.amazonaws.com/John+R+CV.docx">
                Download CV
             </Button>
           </div>
+
+          </div>
+
+
+
+        </div>    
+
+        
+
+          
+
+        
 
     
     </div>

@@ -2,14 +2,9 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import "./Contact.css"
-
-import * as Bs from "react-icons/bs";
 import * as Ai from "react-icons/ai"
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
     heroContent: {

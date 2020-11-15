@@ -2,13 +2,12 @@ import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home/Home"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Resume from "./pages/Resume/Resume";
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 import Footer from "./components/Footer"
-import Sidebar from "./pages/Resume/Sidebar"
-import {SidebarData} from "./pages/Resume/SidebarData"
+
 
 
 

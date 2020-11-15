@@ -2,11 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Navbar.css';
 import Button from '@material-ui/core/Button';
+import * as Ai from "react-icons/ai"
+
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -20,14 +21,6 @@ const useStyles = makeStyles((theme) => ({
     background: "black",
     color: "white",
     height: "4.5rem",
-  },
-   appbarTitle: {
-    flexGrow: 1,
-    position: "relative",
-    top: "10px",
-    display: 'flex',
-    fontFamily: "AudioWide",
-    fontSize: "1.5rem",
   },
 }));
 
@@ -62,14 +55,15 @@ useEffect(() => {
 
   return (   
     <div>
-    <AppBar  className={classes [navRef.current] } >
+    <AppBar className={classes[navRef.current]} >
       <Toolbar >
        
-      <Typography className={classes.appbarTitle} >
+      <h1 className="nav-title" >
           <Link style={{ textDecoration: 'none', color: "#fff" }} to="/" onClick={closeMobileMenu}>
-          Skywalker
+          <Ai.AiOutlineCloud className="logo"/>
+          Skywalker 
           </Link>
-          </Typography>
+          </h1>
 
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

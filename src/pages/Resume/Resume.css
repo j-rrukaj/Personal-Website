@@ -1,19 +1,25 @@
 
 .title {
     padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 
 .text {
-   
+
     padding-top: 1.5rem;
     padding-left: 15rem;
     padding-right: 15rem;
     padding-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 #sectionOne {
-    background-color: #eeeded;
+    background-color: #F9F9F9;
     min-height: 82vh;
     background-size: cover;
 }
@@ -24,7 +30,7 @@
 }
 
 #sectionThree {
-    background-color: #eeeded;
+    background-color: #F9F9F9;
     min-height: 110vh;
     background-size: cover;
 }
@@ -34,7 +40,14 @@
     background-size: cover;
 }
 
+#sectionFive {
+    background-color: #F9F9F9;
+    min-height: 10vh;
+    background-size: cover;
+}
+
 .button {
+    padding-top: 1.5rem;
         display: flex;
         justify-content: center;
 
@@ -55,7 +68,7 @@
     }
 
     #sectionOne {
-        background-color: #eeeded;
+        background-color: #F9F9F9;
         min-height: 82vh;
         background-size: cover;
     }
@@ -66,7 +79,7 @@
     }
 
     #sectionThree {
-        background-color: #eeeded;
+        background-color: #F9F9F9;
         min-height: 110vh;
         background-size: cover;
     }

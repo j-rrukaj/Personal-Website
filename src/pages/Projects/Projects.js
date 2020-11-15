@@ -1,5 +1,4 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -48,10 +47,12 @@ export default function Projects() {
         <Container className={classes.cardGrid} maxWidth="lg">
 
           <Grid container spacing={4}>
+
+          
             {CardItem.map((projectItem) => (
 
               <Entry
-            key={projectItem.key}
+            key={projectItem.id}
             title={projectItem.title}
             image={projectItem.image}
             description={projectItem.description}

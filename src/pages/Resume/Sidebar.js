@@ -2,16 +2,14 @@ import React, { useState } from 'react';
 import "./Sidebar.css"
 import {SidebarData} from "./SidebarData"
 import {Link} from "react-scroll"
-import * as Bs from "react-icons/bs";
 import * as Ai from "react-icons/ai"
-
 import {Link as Links}  from 'react-router-dom'
 
 
 
     export default function Sidebar() {
 
-    const [sidebar, setSidebar] = useState(true)
+    const [sidebar, setSidebar] = useState(false)
 
     const showSidebar = () => setSidebar(!sidebar) 
 
@@ -22,7 +20,7 @@ import {Link as Links}  from 'react-router-dom'
 
         <div >         
         <Links to="#" className="right-arrow" >
-               <Ai.AiOutlineDoubleRight onClick={showSidebar} />
+               <Ai.AiOutlineDoubleRight onClick={showSidebar} /><Ai.AiOutlineDoubleRight onClick={showSidebar} />
        </Links>
        </div>
 
