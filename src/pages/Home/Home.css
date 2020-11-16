@@ -19,7 +19,7 @@
 }
 
 
-#sectionTwo {
+#section2 {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
 }
 
 .heading {
-    padding-top: 2rem;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,8 +37,9 @@
 }
 
 .info {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-top: 3rem;
+    padding-left: 28rem;
+    padding-right: 28rem;
     position: absolute;
     align-content: center;
     justify-content: center;
@@ -51,9 +52,11 @@
 
 @media screen and (max-width: 960px) {
 
+    
+
     .info {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         position: absolute;
         align-content: center;
         justify-content: center;

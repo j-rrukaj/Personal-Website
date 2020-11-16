@@ -28,7 +28,7 @@ export default function Home() {
        </div>
         
         
-   <div id="sectionTwo" >
+   <div id="section2" >
 
   
         
@@ -38,20 +38,35 @@ export default function Home() {
         <div >
 
         <p className="info">
-                As you will gather from my CV, I am a Certified AWS Solutions Architect and SysOps Administrator, with a strong background in IT and
-                technical support, working to deliver high quality oversight, analytical and client engagement services to the best possible standards. I also have strong leadership and team working skills and am very well organised with a keen attention to detail, so I believe I would be an ideal candidate for this role.
-                Having self taught to obtain my AWS Certifications (and I am planning to study for more), as well as completing a number of personal
-                AWS based projects, my objective now is to pursue a career in a junior or trainee Cloud Computing role.
-       
-        <br />
-        <br />
+               
+        Hi, my name is John, I am 26 years old and I live in London, UK. I have started learning a range of different technologies from Infrastructure (AWS) to programming (React.js) this has given me an insight in to business processes.
+
+        <br/>
+        <br/>
+
+        I currently hold two AWS Certs and I plan on doing my developer certification next followed by the two professional exams. 
+        <br/>
+        <br/>
+
+        I am a motivated learner and this has kept me being productive and motivated. 
+        <br/>
+        <br/>
+        Some technology I am using right now are Docker, Kubernetes, CodePipeline, Jenkins and Terraform  
+        <br/>
+        <br/>
+        In my free time, I attending meet up groups, organising social events and participating in Sunday league football with friends
         
-                I have excellent communication and interpersonal skills, combined with an ability to work equally well either as part of a
-                collaborative team or autonomously when required; and I am obviously also highly IT literate with a good working knowledge of JavaScript,
-                Node and React. If there are any questions or areas that you would like me to clarify, then please do not hesitate to get in contact and,
-                of course, I would very much welcome the opportunity to expand on my background and discuss the role further with you in interview.
+        <br/>
+        <br/>
+
+        
+
+       <p>
+        To find out more visit the Resume section which will give you a deep dive in to my professional achievements.
+        </p>
        
         </p>
+
         </div>
 
         </div>

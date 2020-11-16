@@ -26,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
   const classes = useStyles();
+
+  
   const [click, setClick] = useState(false);
 
   const [navBackground, setNavBackground] = useState("navbar");

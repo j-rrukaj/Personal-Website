@@ -10,7 +10,7 @@ import Entry from "./Entry"
 const useStyles = makeStyles((theme) => ({
   backgroundImg: {
       minHeight: "100vh",
-      backgroundImage: `url(${process.env.PUBLIC_URL + "/images/cloudsmountain.jpg"})`,
+      backgroundImage: `url(${process.env.PUBLIC_URL + "/images/test3.png"})`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",

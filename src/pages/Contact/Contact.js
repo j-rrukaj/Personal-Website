@@ -76,14 +76,16 @@ function Contact() {
 
          <Typography variant="h5"  gutterBottom>
          <Ai.AiFillLinkedin className="icons"/>
-         LinkedIn: in/JohnRrukaj
+         <a className="contact-links" href="https://www.linkedin.com/in/john-rrukaj/" target="_blank">LinkedIn: in/JohnRrukaj</a>
+         
          </Typography>
 
          <br />
 
          <Typography variant="h5"  gutterBottom>
          <Ai.AiFillGithub className="icons" />
-         Github: Github.com/j-rrukaj
+         <a className="contact-links" href="https://github.com/j-rrukaj" target="_blank">Github: Github.com/j-rrukaj</a>
+         
          </Typography>
 
         </div>

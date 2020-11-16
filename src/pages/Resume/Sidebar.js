@@ -20,7 +20,7 @@ import {Link as Links}  from 'react-router-dom'
 
         <div >         
         <Links to="#" className="right-arrow" >
-               <Ai.AiOutlineDoubleRight onClick={showSidebar} /><Ai.AiOutlineDoubleRight onClick={showSidebar} />
+               <Ai.AiOutlineDoubleRight onClick={showSidebar} />
        </Links>
        </div>
 

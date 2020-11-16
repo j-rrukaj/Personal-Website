@@ -52,7 +52,7 @@ function Entry(props) {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                    <a href={props.link}>View</a>
+                    <a href={props.link} target="_blank">View</a>
                     </Button>
                     
                   </CardActions>

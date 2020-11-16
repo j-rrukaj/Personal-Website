@@ -278,20 +278,41 @@ export default function Resume() {
     <Typography className= "title" variant="h4" align="center" component="h2" gutterBottom>
       Education
       </Typography>
+
+
+      <Typography className={classes.careerHeading} gutterBottom>
+      University of Westminster | 2012 to 2015 Honours Degree in Business Information Systems | 2:2
+      </Typography>
      
       <ListItemText >
-       •  University of Westminster | 2012 to 2015 Honours Degree in Business Information Systems | 2:2
+      • Business Context 
         </ListItemText>
+        <ListItemText >
+      • Project Management 
+        </ListItemText>
+        <ListItemText >
+      • Design and Development 
+        </ListItemText>
+        <ListItemText >
+      • Web Development
+        </ListItemText>
+        <ListItemText >
+      • Database Design and Practice
+        </ListItemText>
+        <ListItemText >
+      • Programming
+        </ListItemText>
+
 
         
 
-      <Typography className= "title" variant="h5" align="center" component="h2" gutterBottom>
-        Interests
-      </Typography>
 
-      <ListItemText >
-      • Attending meet up groups, organising social events and participating in Sunday league football with friends
-        </ListItemText>
+
+
+
+
+
+        
      
       </div>
 
