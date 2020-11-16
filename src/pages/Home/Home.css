@@ -52,11 +52,33 @@
 
 @media screen and (max-width: 960px) {
 
+    .hero-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    #section2 {
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;   
+    }
+
+    .heading {
+        padding-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
     
 
     .info {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         position: absolute;
         align-content: center;
         justify-content: center;

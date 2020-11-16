@@ -54,7 +54,7 @@ function Contact() {
         
          <Container align= "center">
 
-         <img className={classes.profileImg} src="/images/profile.jpg" alt=""/>
+         <img className={classes.profileImg} src="/images/profile.jpg" gutterBottom alt=""/>
         
 
   
