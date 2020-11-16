@@ -2,11 +2,24 @@
 .title {
     padding: 2rem;
     font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
     align-items: center;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
+.sub-headings {
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+
+}
 
 .text {
 
@@ -56,48 +69,9 @@
 
 
 @media screen and (max-width: 960px) {
-
-
-
     .text {
-    
-        padding-top: 1.5rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
-        padding-bottom: 2rem;
     }
-
-    #sectionOne {
-        background-color: #F9F9F9;
-        min-height: 82vh;
-        background-size: cover;
-    }
-
-    #sectionTwo {
-        min-height: 80vh;
-        background-size: cover;
-    }
-
-    #sectionThree {
-        background-color: #F9F9F9;
-        min-height: 110vh;
-        background-size: cover;
-    }
-
-    #sectionFour {
-        min-height: 40vh;
-        background-size: cover;
-    }
-
-
-
-
-
-
-
-
-
-
-
 
 } 

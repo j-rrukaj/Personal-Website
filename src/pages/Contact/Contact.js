@@ -54,7 +54,7 @@ function Contact() {
         
          <Container align= "center">
 
-         <img className={classes.profileImg} src="/images/profile.jpg" gutterBottom alt=""/>
+         <img className={classes.profileImg} src="/images/profile.jpg"  alt=""/>
         
 
   
@@ -76,7 +76,7 @@ function Contact() {
 
          <Typography variant="h5"  gutterBottom>
          <Ai.AiFillLinkedin className="icons"/>
-         <a className="contact-links" href="https://www.linkedin.com/in/john-rrukaj/" target="_blank">LinkedIn: in/JohnRrukaj</a>
+         <a className="contact-links" rel="noopener noreferrer" href="https://www.linkedin.com/in/john-rrukaj/" target="_blank">LinkedIn: in/JohnRrukaj</a>
          
          </Typography>
 
@@ -84,7 +84,7 @@ function Contact() {
 
          <Typography variant="h5"  gutterBottom>
          <Ai.AiFillGithub className="icons" />
-         <a className="contact-links" href="https://github.com/j-rrukaj" target="_blank">Github: Github.com/j-rrukaj</a>
+         <a className="contact-links" rel="noopener noreferrer" href="https://github.com/j-rrukaj" target="_blank">Github: Github.com/j-rrukaj</a>
          
          </Typography>
 

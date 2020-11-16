@@ -61,10 +61,12 @@ export default function Home() {
 
         
 
-       <p>
-        To find out more visit the Resume section which will give you a deep dive in to my professional achievements.
-        </p>
+      
        
+        </p>
+
+        <p className="info">
+        To find out more visit the Resume section which will give you a deep dive in to my professional achievements.
         </p>
 
         </div>

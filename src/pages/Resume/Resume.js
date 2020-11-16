@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "./Sidebar"
-import "./Resume.css"
+import Sidebar from "./Sidebar";
+import "./Resume.css";
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { ListItemText } from '@material-ui/core';
@@ -23,12 +23,7 @@ const useStyles = makeStyles((theme) => ({
   imagesCenter: {
     display: "flex",
     justifyContent: "center",
-  },
-  careerHeading: {
-    padding: "20px",     
-    },
-
-  
+  }
 
 }));
 
@@ -37,28 +32,21 @@ export default function Resume() {
   const classes = useStyles();
   return (
 
-
-  
-
     <div  >
 
     <Sidebar />
     
       
-
-  
       <Typography className={classes.heroContent} variant="h2" align="center" >
           Resume
         </Typography>
 
-  
-
       <div id="sectionOne" className="text">
         
       <div  id="Summary">
-     <Typography className= "title" variant="h4" align="center"  gutterBottom>
+     <h1 className= "title" >
           Professional Summary
-        </Typography>
+        </h1>
 
         <Typography variant="body1" gutterBottom>
         Seeking a dynamic new role as a junior AWS engineer or a junior React programmer, passionate and goal driven individual
@@ -75,9 +63,9 @@ export default function Resume() {
 
         <div id="Skill Set">
 
-        <Typography className= "title" variant="h4"  align="center" gutterBottom>
+        <h1 className= "title" >
          Key Skill Set
-        </Typography>
+        </h1>
         
 
         <Typography variant="body3" gutterBottom >
@@ -123,9 +111,9 @@ export default function Resume() {
         <div id="AWS">
 
 
-        <Typography className= "title" variant="h4"  align="center" gutterBottom>
+        <h1 className= "title" >
         AWS Aptitudes
-        </Typography>
+        </h1>
 
       <Typography >
 
@@ -156,9 +144,9 @@ export default function Resume() {
 
       <div id="Certifications">
    
-    <Typography className= "title" variant="h4" align="center" gutterBottom>
+    <h1 className= "title">
       Professional Certifications and Training
-        </Typography>
+        </h1>
 
       <div className={classes.imagesCenter}>
        <img className={classes.img} src="images/solutions-badge.png" alt=""/>
@@ -176,9 +164,9 @@ export default function Resume() {
     <div id="Projects">
 
 
-    <Typography className= "title" variant="h4" align="center" gutterBottom>
+    <h1 className= "title" >
       Project Experience
-      </Typography>
+      </h1>
 
       <Typography >
 
@@ -206,17 +194,17 @@ export default function Resume() {
 
       <div id="Career">
 
-      <Typography className= "title" variant="h4" align="center" gutterBottom>
+      <h1 className= "title" >
       Career Summary
-      </Typography>
+      </h1>
 
-      <Typography className={classes.careerHeading} variant="subtitle1" align="center" gutterBottom>
+      <h3 className="sub-headings">
       MENTOR AND SUPPORT ASSISTANT WITH CERTIFIED AWS INSTRUCTOR (ANDREW BEL-DEAN) | 2019 
-      </Typography>
+      </h3>
 
-      <Typography variant="subtitle2" gutterBottom>
+      <h4 >
       KEY ACHIEVEMENTS AND RESPONSIBILITIES
-      </Typography>
+      </h4>
 
      
       <ListItemText >
@@ -232,10 +220,10 @@ export default function Resume() {
         </ListItemText>
         
 
-      <Typography className={classes.careerHeading} variant="subtitle1" align="center" gutterBottom>
+      <h3 className="sub-headings">
       TECHNICAL SUPPORT MANAGER | 2017 TO 2020 DIXONS CARPHONE
 
-      </Typography>
+      </h3>
 
       <Typography variant="subtitle2" gutterBottom>
       KEY ACHIEVEMENTS AND RESPONSIBILITIES
@@ -275,14 +263,14 @@ export default function Resume() {
     <div id="Education">
 
 
-    <Typography className= "title" variant="h4" align="center" component="h2" gutterBottom>
+    <h1 className= "title">
       Education
-      </Typography>
+      </h1>
 
 
-      <Typography className={classes.careerHeading} gutterBottom>
+      <h3 className="sub-headings">
       University of Westminster | 2012 to 2015 Honours Degree in Business Information Systems | 2:2
-      </Typography>
+      </h3>
      
       <ListItemText >
       • Business Context 
@@ -303,17 +291,6 @@ export default function Resume() {
       • Programming
         </ListItemText>
 
-
-        
-
-
-
-
-
-
-
-        
-     
       </div>
 
       </div>
@@ -330,18 +307,8 @@ export default function Resume() {
           </div>
 
           </div>
-
-
-
         </div>    
 
-        
-
-          
-
-        
-
-    
     </div>
       
   )

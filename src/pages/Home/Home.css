@@ -39,11 +39,7 @@
 .info {
     padding-top: 3rem;
     padding-left: 28rem;
-    padding-right: 28rem;
-    position: absolute;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    padding-right: 28rem;  
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 
@@ -52,39 +48,17 @@
 
 @media screen and (max-width: 960px) {
 
-    .hero-text {
-        font-family: 'Montserrat', sans-serif;
+    .hero-text {   
         font-size: 1.2rem;
-        color: white;
     }
 
     #section2 {
         height: 120vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;   
     }
-
-    .heading {
-        padding-top: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        font-family: 'Montserrat', sans-serif;
-        
-    }
-    
 
     .info {
         padding-left: 3rem;
         padding-right: 3rem;
-        position: absolute;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
     }
 
 
