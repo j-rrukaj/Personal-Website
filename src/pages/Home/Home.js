@@ -51,10 +51,10 @@ export default function Home() {
         I am a motivated learner and this has kept me being productive and motivated. 
         <br/>
         <br/>
-        Some technology I am using right now are Docker, Kubernetes, CodePipeline, Jenkins and Terraform  
+        Some technology I am using right now are Docker, Kubernetes, CodePipeline, Jenkins and Terraform. 
         <br/>
         <br/>
-        In my free time, I attending meet up groups, organising social events and participating in Sunday league football with friends
+        In my free time, I attending meet up groups, organising social events and participating in Sunday league football with friends.
         
         <br/>
         <br/>
