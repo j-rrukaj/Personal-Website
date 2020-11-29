@@ -1,41 +1,84 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
 import "./Home.css"
+import { makeStyles } from '@material-ui/core/styles';
+import { IconButton, Collapse } from '@material-ui/core';
 
 
-export default function Home() {
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link as Scroll } from 'react-scroll';
 
+const useStyles = makeStyles((theme) => ({
+  
+  icon: {
+    color: 'white',
+    fontSize: '2rem',
+  },
+  colorText: {
+    color: 'white',
+  },
+  container: {
+    textAlign: 'center',
+  },
+  title: {
+    alignContent: "center",
+    justifyContent: "center",
+    color: 'white',
+    fontSize: '4.5rem',
+    fontFamily: '',
+  },
+  heading: {
+    fontSize: "1.5rem",
+    color: "white",
+  },
+  goDown: {
+    color: 'yellow',
+    fontSize: '3rem',
+  },
+}));
+export default function Header() {
+  const classes = useStyles();
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
   return (
 
-   
-    <div className="main">
-    
-      <div className= "backgroundImg" >
+    <div>
 
-      <div className="hero-text">
-        <h1  >
+    <div id="backgroundImg">
+    <Collapse
+      in={checked}
+      {...(checked ? { timeout: 1000 } : {})}
+      collapsedHeight={60}
+    >
+      <div className={classes.container}>
+        <h1 className={classes.title}>
+        
          John Rrukaj
         </h1>
         
-        <h4>
+        <h3 className={classes.heading}>
           AWS Solutions Architect & SysOps Administrator 
           <br />
           React Programmer 
-        </h4>
+        </h3>
        
+        <Scroll to="section2" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
+          </Scroll>
         </div>
+      </Collapse>
+      </div>
 
-       </div>
-        
-        
+              
    <div id="section2" >
 
-  
-        
 
         <h1 className="heading">A little  about me...</h1>
 
-        <div >
+        <div>
 
         <p className="info">
                

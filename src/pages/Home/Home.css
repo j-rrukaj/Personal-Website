@@ -1,22 +1,15 @@
 
-.backgroundImg {
+#backgroundImg {
     height: 100vh;
     background-image: url(/images/nightsky.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    align-content: center;
-    text-align: center; 
+    align-items: center;
+    display: flex;
   }
 
-.hero-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: white;
-}
 
 
 #section2 {
