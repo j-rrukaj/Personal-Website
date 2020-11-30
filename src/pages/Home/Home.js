@@ -48,7 +48,7 @@ export default function Header() {
     <div id="backgroundImg">
     <Collapse
       in={checked}
-      {...(checked ? { timeout: 1000 } : {})}
+      {...(checked ? { timeout: 1500 } : {})}
       collapsedHeight={60}
     >
       <div className={classes.container}>
