@@ -1,77 +1,133 @@
+.resume-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 16% 8%, rgba(216, 166, 108, 0.13), transparent 40%),
+    radial-gradient(circle at 86% 8%, rgba(82, 120, 184, 0.16), transparent 35%),
+    #0c1018;
+  color: #f3f5fb;
+}
+
+.resume-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 7.8rem 1.2rem 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.resume-hero {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+}
+
+.resume-intro {
+  margin: 0 auto 0.4rem;
+  text-align: center;
+  color: #bcc7da;
+  max-width: 64ch;
+  line-height: 1.65;
+}
+
+.resume-card {
+  background: linear-gradient(160deg, rgba(20, 28, 43, 0.82), rgba(12, 17, 28, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.4rem clamp(1rem, 2.2vw, 2rem);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(242, 215, 166, 0.36);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.split-pane {
+  background: rgba(16, 23, 35, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 0.7rem 0.85rem 0.9rem;
+}
 
 .title {
-    padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.38rem;
+  text-align: left;
+  color: #fff;
 }
 
 .sub-headings {
-    padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-
-
-}
-
-.text {
-
-    padding-top: 1.5rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-bottom: 2rem;
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-#sectionOne {
-    background-color: #F9F9F9;
-    min-height: 82vh;
-    background-size: cover;
-}
-
-#sectionTwo {
-    min-height: 80vh;
-    background-size: cover;
-}
-
-#sectionThree {
-    background-color: #F9F9F9;
-    min-height: 110vh;
-    background-size: cover;
-}
-
-#sectionFour {
-    min-height: 40vh;
-    background-size: cover;
-}
-
-#sectionFive {
-    background-color: #F9F9F9;
-    min-height: 10vh;
-    background-size: cover;
+  margin: 0.8rem 0 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  color: #d7deea;
+  line-height: 1.5;
 }
 
 .button {
-    padding-top: 1.5rem;
-        display: flex;
-        justify-content: center;
-
-      
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
+.cv-button {
+  border: 1px solid #f2d7a6;
+  color: #f2d7a6;
+  border-radius: 999px;
+  padding: 0.58rem 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+  background-color: #f2d7a6;
+  color: #121a29;
+}
+
+.resume-paragraph {
+  color: #cfd5e2;
+  line-height: 1.68;
+  margin: 0;
+}
+
+.resume-paragraph.centered {
+  text-align: center;
+}
+
+.resume-list {
+  margin: 0.2rem 0 0.7rem;
+  padding-left: 1.1rem;
+  color: #cfd5e2;
+}
+
+.resume-list li {
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
 
 @media screen and (max-width: 960px) {
-    .text {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
+  .resume-shell {
+    padding-top: 6.8rem;
+  }
 
-} 
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .title,
+  .sub-headings {
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+.site-footer {
+  background: #090d14;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d8deea;
+  text-align: center;
+  padding: 1rem 1rem 0.9rem;
+}
+
+.site-footer h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-copy {
+  margin: 0;
+  color: #b8bfce;
+}
+
+.footer-copy a {
+  color: #f2d7a6;
+  text-decoration: none;
+}

@@ -1,60 +1,190 @@
+.home-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(216, 166, 108, 0.18), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(82, 120, 184, 0.22), transparent 38%),
+    #0c1018;
+  color: #f4f4f4;
+  padding: 7.5rem 6vw 5rem;
+}
 
-#backgroundImg {
-    height: 100vh;
-    background-image: url(/images/nightsky.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto 3.5rem;
+  max-width: 1200px;
+}
+
+.hero-copy,
+.hero-visual,
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.hero-copy.show,
+.hero-visual.show,
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-kicker {
+  margin: 0 0 1rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  color: #cbb48a;
+  font-size: 0.78rem;
+}
+
+.hero-title {
+  font-family: 'Audiowide', cursive;
+  font-size: clamp(2.6rem, 5.5vw, 4.8rem);
+  line-height: 1.02;
+  margin: 0;
+}
+
+.hero-subtitle {
+  max-width: 46ch;
+  margin: 1.2rem 0 1.8rem;
+  color: #c8ccd8;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.74rem 1.25rem;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+}
+
+.cta-primary {
+  background: #ffffff;
+  color: #101722;
+}
+
+.cta-ghost {
+  border: 1px solid #7e8ca6;
+  color: #e4e8f2;
+}
+
+.hero-visual {
+  justify-self: center;
+  width: min(420px, 78vw);
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.4);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(1.05);
+}
+
+.cv-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.3rem;
+}
+
+.profile-card {
+  position: sticky;
+  top: 6.2rem;
+  height: fit-content;
+  background: rgba(16, 22, 34, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 1.4rem 1.2rem;
+}
+
+.profile-card h3 {
+  margin: 0 0 1rem;
+}
+
+.profile-card p {
+  margin: 0 0 0.5rem;
+  color: #d3d8e3;
+}
+
+.download-link {
+  margin-top: 0.8rem;
+  display: inline-block;
+  color: #f2d7a6;
+  text-decoration: none;
+}
+
+.cv-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.content-card {
+  background: rgba(16, 22, 34, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 1.35rem 1.2rem;
+}
+
+.content-card h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.25rem;
+}
+
+.content-card p {
+  margin: 0;
+  color: #ced5e2;
+  line-height: 1.7;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip-row span {
+  border-radius: 999px;
+  padding: 0.38rem 0.72rem;
+  background: #222b3d;
+  border: 1px solid #33415c;
+  font-size: 0.86rem;
+}
+
+@media (max-width: 960px) {
+  .home-page {
+    padding-top: 6.2rem;
   }
 
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
 
+  .cv-grid {
+    grid-template-columns: 1fr;
+  }
 
-#section2 {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-}
-
-.heading {
-    padding-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.info {
-    padding-top: 3rem;
-    padding-left: 28rem;
-    padding-right: 28rem;  
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-
-}
-
-
-@media screen and (max-width: 960px) {
-
-    .hero-text {   
-        font-size: 1.2rem;
-    }
-
-    #section2 {
-        height: 120vh;
-    }
-
-    .info {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-
-
-
-
+  .profile-card {
+    position: relative;
+    top: 0;
+  }
 }
