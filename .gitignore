@@ -16,6 +16,7 @@
 .DS_Store
 .npm-cache
 .vscode
+docker-ecr-commands.txt
 .env.local
 .env.development.local
 .env.test.local

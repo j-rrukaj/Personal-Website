@@ -45,7 +45,7 @@ export default function Header() {
         </div>
 
         <div className={`hero-visual ${loaded ? 'show' : ''}`}>
-          <img src="/images/profile.jpg" alt="John Rrukaj" />
+          <img src="/images/me-cartoon-v2.png" alt="John Rrukaj" />
         </div>
       </section>
 

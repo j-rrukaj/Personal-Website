@@ -15,7 +15,7 @@ function Contact() {
 
       <section className="contact-shell">
         <div className="contact-profile">
-          <img src="/images/profile.jpg" alt="John Rrukaj" />
+          <img src="/images/me-cartoon-v2.png" alt="John Rrukaj" />
         </div>
 
         <div className="contact-card">

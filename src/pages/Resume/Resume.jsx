@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Resume.css";
 
 export default function Resume() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.16 }
+    );
+
+    const cards = document.querySelectorAll(".resume-card");
+    cards.forEach((card) => observer.observe(card));
+
+    return () => {
+      cards.forEach((card) => observer.unobserve(card));
+    };
+  }, []);
+
   return (
     <div className="resume-page">
       <div className="resume-shell">
@@ -11,7 +31,7 @@ export default function Resume() {
           practical delivery across AWS and Azure.
         </p>
 
-        <section id="sectionOne" className="resume-card">
+        <section id="sectionOne" className="resume-card reveal-up">
           <div id="Summary">
           <h1 className="title">Profile</h1>
           <p className="resume-paragraph">
@@ -27,7 +47,7 @@ export default function Resume() {
         </div>
         </section>
 
-        <section id="sectionTwo" className="resume-card">
+        <section id="sectionTwo" className="resume-card reveal-up">
           <div id="WorkExperience">
           <h1 className="title">Work Experience</h1>
 
@@ -89,7 +109,7 @@ export default function Resume() {
         </div>
         </section>
 
-        <section id="sectionThree" className="resume-card">
+        <section id="sectionThree" className="resume-card reveal-up">
           <div id="Education">
           <h1 className="title">Education</h1>
           <h3 className="sub-headings">
@@ -100,7 +120,7 @@ export default function Resume() {
         </div>
         </section>
 
-        <section id="sectionFour" className="resume-card split">
+        <section id="sectionFour" className="resume-card split reveal-up">
           <div id="TechStack" className="split-pane">
           <h1 className="title">Software & Platform Experience</h1>
           <p className="resume-paragraph">
@@ -122,7 +142,7 @@ export default function Resume() {
         </div>
         </section>
 
-        <section id="sectionFive" className="resume-card">
+        <section id="sectionFive" className="resume-card reveal-up">
           <div id="CV">
           <h1 className="title">Hobbies & Interests</h1>
           <p className="resume-paragraph centered">

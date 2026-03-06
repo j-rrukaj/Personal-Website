@@ -7,9 +7,15 @@ import * as Ai from "react-icons/ai"
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [theme, setTheme] = useState("dark");
+  const themes = ["dark", "slate", "mono"];
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const switchTheme = () => {
+    const nextIndex = (themes.indexOf(theme) + 1) % themes.length;
+    setTheme(themes[nextIndex]);
+  };
 
   useEffect(() => {
     const changeBackgroundColor = () => {
@@ -22,6 +28,18 @@ export default function Navbar() {
       document.removeEventListener("scroll", changeBackgroundColor);
     };
   }, []);
+
+  useEffect(() => {
+    const storedTheme = window.localStorage.getItem("site-theme");
+    if (storedTheme && themes.includes(storedTheme)) {
+      setTheme(storedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    window.localStorage.setItem("site-theme", theme);
+  }, [theme]);
 
   return (   
     <header className={`site-nav ${isScrolled ? 'scrolled' : ''}`}>
@@ -44,6 +62,15 @@ export default function Navbar() {
           <Link className="nav-link" onClick={closeMobileMenu} to="/resume">Resume</Link>
           <Link className="nav-link" onClick={closeMobileMenu} to="/projects">Projects</Link>
           <Link className="nav-link" onClick={closeMobileMenu} to="/contact">Contact</Link>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={switchTheme}
+            aria-label={`Switch theme. Current theme is ${theme}`}
+          >
+            <Ai.AiOutlineBgColors />
+            <span>{theme}</span>
+          </button>
         </nav>
       </div>
     </header>
