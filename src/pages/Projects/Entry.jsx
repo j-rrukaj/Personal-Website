@@ -19,9 +19,11 @@ function Entry(props) {
             <span key={`${props.title}-${tag}`}>{tag}</span>
           ))}
         </div>
-        <a href={props.link} rel="noopener noreferrer" target="_blank">
-          View Project
-        </a>
+        {props.link && (
+          <a href={props.link} rel="noopener noreferrer" target="_blank">
+            View Project
+          </a>
+        )}
       </div>
     </article>
   )

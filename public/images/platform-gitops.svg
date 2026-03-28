@@ -1,0 +1,26 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="36" fill="#09131F"/>
+  <rect x="40" y="40" width="1120" height="595" rx="28" fill="#0F1D30" stroke="#233852"/>
+  <text x="84" y="116" fill="#F3F7FC" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">GitOps and Shared Ingress</text>
+  <text x="84" y="158" fill="#8EA5C5" font-family="Arial, Helvetica, sans-serif" font-size="24">ArgoCD controlling platform apps behind one shared public ALB</text>
+  <rect x="88" y="234" width="210" height="148" rx="22" fill="#111C2C" stroke="#30455D"/>
+  <text x="156" y="298" fill="#60A5FA" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Git</text>
+  <text x="133" y="334" fill="#C7D4E4" font-family="Arial, Helvetica, sans-serif" font-size="18">source of truth</text>
+  <rect x="372" y="234" width="210" height="148" rx="22" fill="#111C2C" stroke="#30455D"/>
+  <text x="430" y="298" fill="#F97316" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">ArgoCD</text>
+  <text x="418" y="334" fill="#C7D4E4" font-family="Arial, Helvetica, sans-serif" font-size="18">sync and drift control</text>
+  <rect x="656" y="198" width="456" height="258" rx="24" fill="#101A2A" stroke="#30455D"/>
+  <text x="702" y="248" fill="#34D399" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Shared ALB</text>
+  <path d="M298 308H372" stroke="#607693" stroke-width="6" stroke-linecap="round"/>
+  <path d="M582 308H656" stroke="#607693" stroke-width="6" stroke-linecap="round"/>
+  <rect x="706" y="286" width="110" height="112" rx="18" fill="#132338" stroke="#355072"/>
+  <rect x="834" y="286" width="110" height="112" rx="18" fill="#132338" stroke="#355072"/>
+  <rect x="962" y="286" width="110" height="112" rx="18" fill="#132338" stroke="#355072"/>
+  <text x="733" y="349" fill="#EAF0F8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Site</text>
+  <text x="847" y="349" fill="#EAF0F8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">ArgoCD</text>
+  <text x="983" y="349" fill="#EAF0F8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Prom</text>
+  <text x="730" y="391" fill="#AEBED4" font-family="Arial, Helvetica, sans-serif" font-size="16">order 10</text>
+  <text x="857" y="391" fill="#AEBED4" font-family="Arial, Helvetica, sans-serif" font-size="16">order 20</text>
+  <text x="985" y="391" fill="#AEBED4" font-family="Arial, Helvetica, sans-serif" font-size="16">order 30</text>
+  <text x="84" y="560" fill="#7D95B3" font-family="Arial, Helvetica, sans-serif" font-size="20">Git-managed applications, ordered ingress rules and clearer release visibility across platform services.</text>
+</svg>

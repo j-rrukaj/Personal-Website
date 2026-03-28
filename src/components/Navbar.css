@@ -82,20 +82,20 @@
   align-items: center;
   gap: 0.35rem;
   border: 1px solid var(--border-strong);
-  background: transparent;
+  background: var(--panel-soft);
   color: var(--accent);
   border-radius: 999px;
   padding: 0.44rem 0.8rem;
-  text-transform: capitalize;
   font-size: 0.86rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 180ms ease, background-color 180ms ease;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 .theme-toggle:hover {
   transform: translateY(-1px);
-  background: var(--panel-soft);
+  background: var(--accent);
+  color: var(--accent-dark);
 }
 
 @media screen and (max-width: 960px) {

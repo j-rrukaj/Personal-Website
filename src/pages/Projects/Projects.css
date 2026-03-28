@@ -42,6 +42,24 @@
   padding: 0.9rem;
 }
 
+.story-card {
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.story-card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.02rem;
+}
+
+.story-card p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
 .project-search {
   width: 100%;
   border: 1px solid var(--border-soft);
@@ -93,6 +111,28 @@
   gap: 1rem;
 }
 
+.project-section {
+  max-width: 1200px;
+  margin: 0 auto 1.2rem;
+}
+
+.section-heading {
+  margin-bottom: 0.9rem;
+}
+
+.section-kicker {
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--accent);
+  font-size: 0.74rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
 .project-card {
   background: var(--panel);
   border: 1px solid var(--border-soft);
@@ -119,6 +159,9 @@
 
 .project-body {
   padding: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .project-body h3 {
@@ -149,8 +192,9 @@
 }
 
 .project-body a {
-  margin-top: 0.95rem;
+  margin-top: auto;
   display: inline-block;
+  padding-top: 0.95rem;
   color: var(--accent);
   text-decoration: none;
   font-weight: 700;
@@ -160,6 +204,19 @@
   text-align: center;
   color: var(--text-muted);
   margin: 1.4rem 0 0;
+}
+
+.projects-story {
+  max-width: 1200px;
+  margin: 1.2rem auto 0;
+}
+
+.story-label {
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.74rem;
+  color: var(--accent);
 }
 
 @keyframes project-rise {

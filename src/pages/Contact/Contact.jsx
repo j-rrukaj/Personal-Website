@@ -24,10 +24,6 @@ function Contact() {
             <span>johnrrukaj@gmail.com</span>
           </div>
           <div className="contact-item">
-            <Ai.AiFillMobile className="icons" />
-            <span>07432481567</span>
-          </div>
-          <div className="contact-item">
             <Ai.AiFillLinkedin className="icons" />
             <a className="contact-links" rel="noopener noreferrer" href="https://www.linkedin.com/in/john-rrukaj/" target="_blank">linkedin.com/in/john-rrukaj</a>
           </div>

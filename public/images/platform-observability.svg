@@ -1,0 +1,26 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" rx="36" fill="#09121D"/>
+  <rect x="38" y="38" width="1124" height="599" rx="28" fill="#0F1A2A" stroke="#22354D"/>
+  <text x="84" y="116" fill="#F3F7FC" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">Observability and Autoscaling</text>
+  <text x="84" y="158" fill="#8FA5C4" font-family="Arial, Helvetica, sans-serif" font-size="24">Prometheus, HPA, disruption budgets and cluster autoscaler wiring</text>
+  <rect x="92" y="238" width="240" height="254" rx="24" fill="#111C2D" stroke="#31455F"/>
+  <text x="130" y="292" fill="#34D399" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Prometheus</text>
+  <path d="M128 410L166 368L204 392L242 332L280 356" stroke="#34D399" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="380" y="238" width="240" height="254" rx="24" fill="#111C2D" stroke="#31455F"/>
+  <text x="454" y="292" fill="#60A5FA" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HPA</text>
+  <rect x="432" y="350" width="40" height="94" rx="10" fill="#294462"/>
+  <rect x="488" y="318" width="40" height="126" rx="10" fill="#3B628D"/>
+  <rect x="544" y="278" width="40" height="166" rx="10" fill="#5B8EC4"/>
+  <rect x="668" y="238" width="240" height="254" rx="24" fill="#111C2D" stroke="#31455F"/>
+  <text x="707" y="292" fill="#F59E0B" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">PDB + Spread</text>
+  <circle cx="736" cy="384" r="24" fill="#294462"/>
+  <circle cx="788" cy="340" r="24" fill="#3B628D"/>
+  <circle cx="840" cy="392" r="24" fill="#5B8EC4"/>
+  <circle cx="840" cy="330" r="24" fill="#7AA6D6"/>
+  <rect x="956" y="238" width="132" height="254" rx="24" fill="#111C2D" stroke="#31455F"/>
+  <text x="978" y="292" fill="#F97316" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">IRSA</text>
+  <text x="987" y="334" fill="#C6D2E3" font-family="Arial, Helvetica, sans-serif" font-size="18">ALB ctrl</text>
+  <text x="975" y="366" fill="#C6D2E3" font-family="Arial, Helvetica, sans-serif" font-size="18">Cluster</text>
+  <text x="974" y="392" fill="#C6D2E3" font-family="Arial, Helvetica, sans-serif" font-size="18">autoscaler</text>
+  <text x="84" y="562" fill="#7D95B3" font-family="Arial, Helvetica, sans-serif" font-size="20">Operational safeguards added around scaling, disruption handling and metrics visibility for the deployed workload.</text>
+</svg>

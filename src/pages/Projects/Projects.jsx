@@ -23,6 +23,8 @@ export default function Projects() {
       return matchesTag && searchableText.includes(searchValue);
     });
   }, [activeTag, searchTerm]);
+  const platformProjects = filteredProjects.filter((project) => project.category === "Platform");
+  const codeProjects = filteredProjects.filter((project) => project.category !== "Platform");
 
   return (
     <div className="projects-page">
@@ -30,8 +32,8 @@ export default function Projects() {
         <p className="projects-kicker">Selected Work</p>
         <h1>Projects</h1>
         <p>
-          Hands-on projects that supported my growth in cloud, automation and
-          delivery engineering.
+          Platform delivery and coding projects separated properly so the
+          production engineering work is not buried under smaller practice apps.
         </p>
       </section>
 
@@ -57,24 +59,66 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="projects-grid">
-        {filteredProjects.map((projectItem, index) => (
-          <Entry
-            key={projectItem.id}
-            title={projectItem.title}
-            image={projectItem.image}
-            description={projectItem.description}
-            link={projectItem.link}
-            tags={projectItem.tags}
-            delay={Math.min(index * 80, 520)}
-          />
-        ))}
-      </section>
+      {platformProjects.length > 0 && (
+        <section className="project-section">
+          <div className="section-heading">
+            <p className="section-kicker">Platform Delivery</p>
+            <h2>AWS, Kubernetes, GitOps and automation work</h2>
+          </div>
+          <div className="projects-grid">
+            {platformProjects.map((projectItem, index) => (
+              <Entry
+                key={projectItem.id}
+                title={projectItem.title}
+                image={projectItem.image}
+                description={projectItem.description}
+                link={projectItem.link}
+                tags={projectItem.tags}
+                delay={Math.min(index * 80, 520)}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+      {codeProjects.length > 0 && (
+        <section className="project-section">
+          <div className="section-heading">
+            <p className="section-kicker">Coding Projects</p>
+            <h2>Public repos and smaller application builds</h2>
+          </div>
+          <div className="projects-grid">
+            {codeProjects.map((projectItem, index) => (
+              <Entry
+                key={projectItem.id}
+                title={projectItem.title}
+                image={projectItem.image}
+                description={projectItem.description}
+                link={projectItem.link}
+                tags={projectItem.tags}
+                delay={Math.min(index * 80, 520)}
+              />
+            ))}
+          </div>
+        </section>
+      )}
       {filteredProjects.length === 0 && (
         <p className="projects-empty">
           No matches found. Try a different search or choose another tag.
         </p>
       )}
+
+      <section className="projects-story reveal-up show">
+        <div className="story-card">
+          <p className="story-label">What This Page Covers</p>
+          <h2>More than standalone repos</h2>
+          <p>
+            The platform section now reflects real work from the `aws-eks`
+            repository: Terraform-managed EKS foundations, GitOps delivery,
+            OIDC-based GitHub Actions access, shared ALB routing and monitored
+            autoscaling behaviour for the deployed workload.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

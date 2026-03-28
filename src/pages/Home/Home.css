@@ -60,6 +60,22 @@
   flex-wrap: wrap;
 }
 
+.hero-highlights {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.hero-highlights span {
+  border-radius: 999px;
+  padding: 0.4rem 0.76rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-soft);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
 .cta {
   text-decoration: none;
   border-radius: 999px;
@@ -133,6 +149,64 @@
   color: var(--text-muted);
 }
 
+.profile-intro {
+  line-height: 1.65;
+}
+
+.profile-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0 1.1rem;
+}
+
+.profile-meta div {
+  background: var(--panel-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 0.85rem 0.75rem;
+}
+
+.profile-meta span {
+  display: block;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.profile-meta strong {
+  font-size: 0.98rem;
+  color: var(--text-main);
+}
+
+.profile-block {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-soft);
+}
+
+.profile-block h4 {
+  margin: 0 0 0.65rem;
+  font-size: 0.92rem;
+}
+
+.profile-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--text-muted);
+}
+
+.profile-list li {
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+
+.profile-note {
+  line-height: 1.65;
+}
+
 .download-link {
   margin-top: 0.8rem;
   display: inline-block;
@@ -170,6 +244,28 @@
   line-height: 1.7;
 }
 
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.focus-item {
+  background: var(--panel-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 0.95rem;
+}
+
+.focus-item h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.focus-item p {
+  font-size: 0.94rem;
+}
+
 .chip-row {
   display: flex;
   flex-wrap: wrap;
@@ -200,5 +296,13 @@
   .profile-card {
     position: relative;
     top: 0;
+  }
+
+  .profile-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
   }
 }

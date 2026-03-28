@@ -8,13 +8,11 @@ export default function Navbar() {
   const [click, setClick] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [theme, setTheme] = useState("dark");
-  const themes = ["dark", "slate", "mono"];
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const switchTheme = () => {
-    const nextIndex = (themes.indexOf(theme) + 1) % themes.length;
-    setTheme(themes[nextIndex]);
+    setTheme((currentTheme) => currentTheme === "dark" ? "light" : "dark");
   };
 
   useEffect(() => {
@@ -31,7 +29,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const storedTheme = window.localStorage.getItem("site-theme");
-    if (storedTheme && themes.includes(storedTheme)) {
+    if (storedTheme === "dark" || storedTheme === "light") {
       setTheme(storedTheme);
     }
   }, []);
@@ -39,6 +37,10 @@ export default function Navbar() {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     window.localStorage.setItem("site-theme", theme);
+    const themeColor = theme === "light" ? "#f3efe6" : "#0c1018";
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", themeColor);
   }, [theme]);
 
   return (   
@@ -66,10 +68,10 @@ export default function Navbar() {
             type="button"
             className="theme-toggle"
             onClick={switchTheme}
-            aria-label={`Switch theme. Current theme is ${theme}`}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
           >
-            <Ai.AiOutlineBgColors />
-            <span>{theme}</span>
+            {theme === "dark" ? <Ai.AiOutlineBulb /> : <Ai.AiOutlineMoon />}
+            <span>{theme === "dark" ? "Light" : "Dark"}</span>
           </button>
         </nav>
       </div>
